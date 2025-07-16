@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AK Minds X Inkspire Prints | Links</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="AK Minds X Inkspire Prints | Social and Business Links of Mohammed Ashfak" />
+  <title>AK Minds X Inkspire Prints</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p2UGrxBHeKhLRu1vKqljxEaZ6L4iZkRRr2i0+vC5cOB9EedCkGE9CqjF1U7YrsIQvLAXDK1GHU3kWe6Axw3aMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
     body {
       margin: 0;
       padding: 0;
       background: #0f0f0f;
-      color: #ffffff;
       font-family: 'Poppins', sans-serif;
+      color: #fff;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
@@ -27,14 +28,14 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle, #6200ea33, #0f0f0f);
-      z-index: -1;
-      animation: pulse 5s infinite alternate;
+      background: radial-gradient(circle at center, #6200ea44, #0f0f0f 80%);
+      z-index: -2;
+      animation: pulse 8s ease-in-out infinite alternate;
     }
 
     @keyframes pulse {
       0% { transform: scale(1); }
-      100% { transform: scale(1.05); }
+      100% { transform: scale(1.03); }
     }
 
     .floating-elements div {
@@ -42,47 +43,40 @@
       width: 50px;
       height: 50px;
       background: #6200ea;
-      opacity: 0.6;
+      opacity: 0.4;
       border-radius: 50%;
       box-shadow: 0 0 20px #6200ea;
       animation: floaty 6s infinite ease-in-out;
     }
 
-    .floating-elements div:nth-child(1) {
-      top: 10%;
-      left: 5%;
-      animation-duration: 8s;
-    }
-    .floating-elements div:nth-child(2) {
-      top: 50%;
-      right: 10%;
-      animation-duration: 10s;
-    }
-    .floating-elements div:nth-child(3) {
-      bottom: 15%;
-      left: 20%;
-      animation-duration: 7s;
-    }
+    .floating-elements div:nth-child(1) { top: 10%; left: 5%; animation-duration: 8s; }
+    .floating-elements div:nth-child(2) { top: 45%; right: 10%; animation-duration: 10s; }
+    .floating-elements div:nth-child(3) { bottom: 15%; left: 20%; animation-duration: 7s; }
 
     @keyframes floaty {
-      0%, 100% { transform: translateY(0) translateX(0); }
-      50% { transform: translateY(-20px) translateX(20px); }
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(20px, -20px); }
+    }
+
+    main {
+      text-align: center;
+      z-index: 1;
+      padding: 20px;
     }
 
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #ffffff;
-      margin-bottom: 20px;
-      box-shadow: 0 0 15px #6200ea;
-      animation: float 3s ease-in-out infinite;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px #6200ea;
+      transition: box-shadow 0.3s ease;
     }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    .profile-pic:hover {
+      box-shadow: 0 0 35px #a266ff;
     }
 
     h1 {
@@ -92,30 +86,34 @@
       text-shadow: 0 0 15px #6200ea;
     }
 
-    p {
-      margin-top: 8px;
-      font-size: 16px;
-      color: #aaa;
+    h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #ccc;
+      margin-top: 6px;
+    }
+
+    .links {
+      margin-top: 30px;
     }
 
     .links a {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      background: #333333;
-      color: #ffffff;
+      gap: 12px;
+      background: #222;
+      color: #fff;
       text-decoration: none;
-      padding: 12px 24px;
-      margin: 10px 0;
+      padding: 14px 24px;
+      margin: 10px auto;
       border-radius: 30px;
-      width: 80%;
-      max-width: 300px;
-      text-align: center;
-      font-size: 18px;
+      width: 90%;
+      max-width: 320px;
+      font-size: 17px;
       font-weight: 400;
-      transition: background 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 
     .links a:hover {
@@ -129,9 +127,9 @@
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 24px; }
+      h1 { font-size: 26px; }
       .profile-pic { width: 100px; height: 100px; }
-      .links a { font-size: 16px; padding: 10px 20px; }
+      .links a { font-size: 15px; padding: 12px 20px; }
     }
   </style>
 </head>
@@ -142,17 +140,35 @@
     <div></div>
     <div></div>
   </div>
-  <img src="https://raw.githubusercontent.com/AshfakIqbal/link-in-bio/main/profile.jpg" alt="Profile Picture" class="profile-pic">
-  <h1>AK Minds X Inkspire Prints</h1>
-  <p>Proprietor: Mohammed Ashfak</p>
-  <div class="links">
-    <a href="https://web.facebook.com/mohamed.ashfaque.14" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-    <a href="https://www.instagram.com/drk.soul_lvr/" target="_blank"><i class="fab fa-instagram"></i>Creator Instagram</a>
-    <a href="https://www.instagram.com/ak_minds/" target="_blank"><i class="fab fa-instagram"></i>AK Minds Instagram</a>
-    <a href="https://www.instagram.com/inkspireprints/" target="_blank"><i class="fab fa-instagram"></i>Inkspire Prints Instagram</a>
-    <a href="https://wa.me/94772949758" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-    <a href="https://www.linkedin.com/company/ak-minds/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-    <a href="https://g.co/kgs/JZbfrZM" target="_blank"><i class="fas fa-map-marker-alt"></i>Location</a>
-  </div>
+
+  <main>
+    <img src="https://raw.githubusercontent.com/AshfakIqbal/link-in-bio/main/profile.jpg" alt="Mohammed Ashfak - Profile Picture" class="profile-pic" />
+    <h1>AK Minds X Inkspire Prints</h1>
+    <h2>Proprietor: Mohammed Ashfak</h2>
+
+    <div class="links">
+      <a href="https://web.facebook.com/mohamed.ashfaque.14" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/drk.soul_lvr/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> Creator Instagram
+      </a>
+      <a href="https://www.instagram.com/ak_minds/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> AK Minds Instagram
+      </a>
+      <a href="https://www.instagram.com/inkspireprints/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> Inkspire Prints Instagram
+      </a>
+      <a href="https://wa.me/94772949758" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.linkedin.com/company/ak-minds/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://g.co/kgs/JZbfrZM" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-map-marker-alt"></i> Location
+      </a>
+    </div>
+  </main>
 </body>
 </html>
